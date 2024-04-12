@@ -84,7 +84,7 @@ const PlotChart = ({ data }) => {
     });
   }, [balanceSheetData, incomeStatementData]);
 
-  return <canvas ref={chartRef} />;
+  return <canvas data-testid="chart-canvas" ref={chartRef} />;
 };
 
 export default PlotChart;
