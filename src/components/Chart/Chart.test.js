@@ -29,7 +29,7 @@ describe("<Chart/>", () => {
     expect(container).toMatchSnapshot();
   });
 
-  test("renders a canvas element", () => {
+  it("renders a canvas element", () => {
     render(<Chart {...props} />);
 
     const canvasElement = screen.getByTestId("chart-canvas");
